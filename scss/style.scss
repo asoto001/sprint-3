@@ -1,0 +1,496 @@
+@use 'variables';
+@use 'mixins';
+@use 'inicial';
+@use 'navbar';
+@use 'header';
+
+.main-container{
+    margin-top: 80px;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__text p{
+        color: variables.$grey;
+    }
+    &__text h2{
+        @include  mixins.title(variables.$black, 40px, 1px);
+    }
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 55px;
+    width: 370px;
+    height: auto;
+    padding: 55px;
+    @media (max-width: 1120px){
+        grid-template-columns: repeat(2, auto);
+    }
+    @media (max-width: 850px){
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__CardHouses-aticle{
+        color: variables.$black;
+        background-color: variables.$white2;
+        width: 370px;
+        height: 530px;
+    }
+    &__figure-img{
+        width: 365px;
+        height: 280px;
+        object-fit: cover;
+    }
+    &__div-info-1{
+        z-index: 1;
+        position: relative;
+        bottom: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__pIcons-div{
+        display: flex;
+        justify-content: space-between;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__p-div{
+        display: flex;
+        gap: 8px;
+    }
+    &__text-type{
+        @include mixins.infoBox(variables.$blue, variables.$white, 60PX, 25px, 3px)
+    }
+    &__text-status{
+        @include mixins.infoBox(variables.$orange, variables.$white, 70PX, 25px, 3px)
+    }
+    &__thunder-icon{
+        @include mixins.img('./img/thunder.png', 20px, 20px, contain)
+    }
+    &__infoIcons-div{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 188px;
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &__price{
+    @include mixins.infoBox(variables.$white, variables.$blue, 85PX, 25px, 3px)
+    }
+    &__favorite{
+        @include mixins.img('./img/heart.png', 20px, 20px, contain)
+    }
+    &__ubication{
+        display: flex;
+        position:relative ;
+        bottom: 45px;
+        left: 15px;
+        color: variables.$grey;
+    }
+    &__ubication-icon{
+        @include mixins.img('./img/location.png', 20px, 20px, contain)
+    }
+    &__direction-text{
+        position: relative;
+        bottom: 35px;
+        left: 20px;
+        font-size: 20px;
+        width: 330px;
+    }
+    &__owner{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__owner-div{
+        display: flex;
+        align-items: center;
+        color: variables.$blue;
+        gap: 5px;
+        font-size: 15px;
+    }
+    &__calendar-div{
+        display: flex;
+        align-items: center;
+        position: relative;
+        right: 5px;
+        color: variables.$grey;
+    }
+    &__owner-photo img{
+        object-fit:fill;
+        width: 30px;
+        height: 30px;
+        border-radius: 40px ;
+    }
+    &__calendar{
+        @include mixins.img('./img/calendar.png', 20px, 20px, contain)
+    }
+    &__otherInfo-div{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 40px;
+        padding: 15px;
+    }
+    &__sizeInfo{
+        display: flex;
+        gap: 5px;
+    }
+    &__icons-div{
+        display: flex;
+        gap: 10px;
+    }
+    
+}
+.button-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__btn-properties{
+       @include mixins.button(220px, 55px, 18px, 1px, variables.$black, variables.$white, 30Px)
+    }
+    
+}
+.hot-section{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    gap: 30px;
+    &__title-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title-div p{
+        color: variables.$grey;
+    }
+    &__title-div h2{
+        @include  mixins.title(variables.$black, 40px, 1px);
+    }
+    &__banner{
+        display: flex;
+        width: 1044px;
+        height: 525px;
+        background-color: variables.$black-hot-deal-containers;
+        @media (max-width: 950px){
+            flex-direction: column;
+            width: auto;
+            height: 830px;
+        }
+    }
+    &__img{
+        object-fit: contain;
+    }
+    &__img img{
+        width: 550px;
+        
+    }
+    &__imgBanner p{
+        z-index: 1;
+        position: relative;
+        bottom: 80px;
+        left: 50px;
+        @include mixins.button(100px, 30px, 12px, 1px, variables.$orange, variables.$white, 3Px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    &__info-banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        color: variables.$grey;
+        position: relative;
+        left: 45px;
+        @media(max-width: 950px){
+            left: 4px;
+        }
+        
+    }
+    &__info-banner h2{
+        @include  mixins.title(variables.$white, 25px, 1px);
+    }
+    &__btn{
+        @include mixins.button(250px, 40px, 15px, 1px, variables.$orange, variables.$white, 3Px);
+        border:none;
+    }
+    &__info-banner img{
+        width: 70px;
+        height: 70px;
+    }
+    &__info-icons{
+        display: flex;
+        justify-content: space-around;
+        column-gap: 25px;
+        color: variables.$grey;
+    }
+    &__info-icons img{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.properties-Area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 175px;
+    &__title-div p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: variables.$grey;
+    }
+    &__title-div h2{
+        @include mixins.title(variables.$black, 35px, 1px)
+    }
+    &__areas{
+        width: 900px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 25px;
+        row-gap: 25px;
+        @media(max-width: 890px){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__img-city-1{
+        @include mixins.img('./img/los-angeles.webp', auto, auto, cover);
+        border-radius: 3px;
+        background-position: center;
+        color: variables.$white;
+        @media(max-width: 890px){
+            height: 150px;
+            width: 300px;
+        }
+    }
+    &__img-city-1 div{
+        
+        position: relative;
+        top: 170px;
+        left: 20px;
+        font-size: 20px; 
+        @media(max-width: 890px){
+            top:45px
+        }
+    }
+    &__img-city-2{
+        @include mixins.img('./img/san-francisco.jpg', auto, auto, cover);
+        width: 203%;
+        border-radius: 3px;
+        background-position: center;
+        color: variables.$white;
+        @media(max-width: 890px){
+            height: 150px;
+            width: 300px;
+        }
+    }
+    &__img-city-2 div{
+        position: relative;
+        top: 170px;
+        left: 20px;
+        font-size: 20px; 
+        @media(max-width: 890px){
+            top:45px
+        }
+    }
+    &__img-city-3{
+        @include mixins.img('./img/Seattle.jpg', auto, auto, cover);
+        grid-column: 1/3;
+        background-position: center;
+        border-radius: 3px;
+        color: variables.$white;
+        @media(max-width: 890px){
+            height: 150px;
+            width: 300px;
+        }
+    }
+    &__img-city-3 div{
+        position: relative;
+        top: 170px;
+        left: 20px;
+        font-size: 20px;
+        @media(max-width: 890px){
+            top:45px
+        }
+    }
+    &__img-city-4{
+        @include mixins.img('./img/san-diego.jpg', auto, auto, cover);
+        border-radius: 3px;
+        background-position: center;
+        color: variables.$white;
+        @media(max-width: 890px){
+            height: 150px;
+            width: 300px;
+        }
+    }
+    &__img-city-4 div{
+        position: relative;
+        top: 170px;
+        left: 20px;
+        font-size: 20px;
+        @media(max-width: 890px){
+            top:45px
+        }
+    }
+}
+
+.agents-section{
+    margin-top: 100px;
+    padding: 45px;
+    &__title-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__title-div p{
+        color: variables.$grey;
+    }
+    &__title-div h2{
+        @include mixins.title(variables.$black, 45px, 1px)
+    }
+    &__cards-article{
+        display: flex;
+        gap: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 55px;
+        @media (max-width: 1120px){
+            grid-template-columns: repeat(2, auto);
+            align-items: center;
+        }
+        @media (max-width: 700px){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__card-div{
+        background-color: variables.$grey2;
+        width: 365px;
+        height: 560px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 25px;
+        &:hover{
+            cursor: pointer; 
+            box-shadow: 10px 5px 5px variables.$grey;
+        }
+    }
+    &__agent-img{
+        @include mixins.img('./img/john.webp', 300px, 250px, cover);
+        background-position: center;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+    &__card-div-2{
+        position: relative;
+        display: flex;
+        right: 54px;
+        gap: 10px;
+        flex-direction: column;
+    }
+    &__card-div h2{
+        @include mixins.title(variables.$black, 35px, 2px);
+        font-weight: lighter;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        &:hover{
+            color: variables.$blue
+        }
+    }
+    &__card-div h4{
+        @include mixins.title(variables.$grey, 15px, 2px);
+        font-weight: lighter;
+    }
+    &__card-div p{
+        @include mixins.title(rgb(36, 36, 36), 15px, 2px);
+        &:hover{
+            color: variables.$blue
+        }
+    }
+    &__icons-div{
+        display: flex;
+        position: relative;
+        left: 112px;
+        top: 25px;
+        gap: 20px;
+    }
+    &__icon-f{
+        @include mixins.img('./img/facebook.png', 25px, 25px, cover);
+    }
+    &__icon-t{
+        @include mixins.img('./img/twitter2.png', 25px, 25px, cover);
+        border: black;
+    }
+    &__radio-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+}
+
+.sell-baner{
+    @include mixins.img('./img/hero-bg-image.webp', 100%, 617px, cover);
+    background-position: center;
+    &__div{
+        background-color: #2741CC;
+        width: 59%;
+        height: 450px;
+        position: relative;
+        left: 25px;
+        top: 108px;
+        border-radius: 3px;
+        padding-left: 75px;
+        padding-top: 75px;
+        @media(max-width: 700px){
+            padding-left: 15px;
+            height: auto;
+        }
+    }
+    &__div h2{
+       @include mixins.title(variables.$white, 55px, 1px);
+    }
+    &__div p{
+        font-size: 20px;
+        color: variables.$grey2;
+        margin-top: 25px;
+    }
+    &__btn{
+        @include mixins.button(220px, 55px, 25px, 1px, variables.$black, variables.$white, 30Px);
+        margin-top:35px;
+        &:hover{
+            background-color: variables.$blue2;
+            cursor: pointer;
+            border: none;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+@use 'variables';
+@use 'mixins';
+
+.navbar-header{
+    background-color: variables.$blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: auto;
+    &__button{
+        @include mixins.button(160px, 35px, 10px, 1px, variables.$blue, variables.$white, 0);
+        border: 0.1em solid #fff;
+        border-right:  variables.$white;
+        border-bottom: variables.$blue;
+        border-top: variables.$blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    &__button-image{
+        width: 20px;
+        height: 20px;
+        
+    }
+    &__text-div{
+        color: variables.$white;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-left: 10px;
+    }
+    &__location-figure{
+        @include mixins.img('./img/location.png', 20px, 20px, contain)
+    }
+    &__phone-figure{
+        @include mixins.img('./img/phone-3.png', 20px, 20px, contain)
+    }
+    &__clock-figure{
+        @include mixins.img('./img/clock.svg', 20px, 20px, contain)
+    }
+    &__div{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+
+    }
+    &__loupe-figure{
+        @include mixins.img('./img/loupe-2.png', 20px, 20px, contain)
+    }
+    &__facebook-figure{
+        @include mixins.img('./img/facebook.png', 20px, 20px, contain)
+    }
+    &__twiter-figure{
+        @include mixins.img('./img/twitter.jpg', 20px, 20px, contain)
+    }
+    &__instagram-figure{
+        @include mixins.img('./img/insta.png', 25px, 25px, contain)
+    }
+    &__pinterest-figure{
+        @include mixins.img('./img/pinterest.png', 20px, 20px, contain)
+    }
+}
+
+.navbar-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: auto;
+    &__div-list{
+        margin-left: 200px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    &__div-royal{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__figure{
+        display: flex;
+        align-items: center;
+        @include mixins.img('../img/Logo.webp', 30px, 30px, contain);
+        margin-left: 25px;
+    }
+    &__btn{
+        @include mixins.button(160px, 60px, 12px, 1px, variables.$orange, variables.$white, 0);
+        border: none;
+    }
+}

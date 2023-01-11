@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+ <html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Logo.ico" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <link rel="stylesheet" href="./style.css" />
+    <title>Casa Royal</title>
+  </head>
+  <body>
+
+    <nav class="navbar-container">
+      <section class="navbar-header">
+        <div class="navbar-header__text-div">
+          <figure class="navbar-header__location-figure"></figure>
+          <p>1441 Market St, San Francisco</p>
+          <figure class="navbar-header__phone-figure" ></figure>
+          <p>(123) 456-7890</p>
+          <figure class="navbar-header__clock-figure"></figure>
+          <p>Mon - Sun: 8:00am - 6:00pm</p>
+        </div>
+        <div class="navbar-header__div">
+          <figure class="navbar-header__loupe-figure"></figure>
+          <figure class="navbar-header__facebook-figure"></figure>
+          <figure class="navbar-header__twiter-figure"></figure>
+          <figure class="navbar-header__instagram-figure"></figure>
+          <figure class="navbar-header__pinterest-figure"></figure>
+          <button class="navbar-header__button"><img src="./img/login.jpg" class="navbar-header__button-image" alt=""><strong>LOGIN/REGISTER</strong> </button>
+        </div>
+        
+      </section>
+      
+      <section class="navbar-main">
+        <div class="navbar-main__div-royal">
+          <figure class="navbar-main__figure"></figure>
+          <p>casa<strong>Royal</strong></p>
+          <div class="navbar-main__div-list">
+            <ul class="navbar-main__list">
+               <li><a href="#">HOMEPAGE</a></li>
+               <li><a href="#Propiedades">PROPERTIES</a></li>
+               <li><a href="#">AGENCIES</a></li>
+               <li><a href="#">PAGE</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="#">CONTACT</a></li>
+               <li><a href="#">COMPARE</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        
+        <button class="navbar-main__btn">SUBMIT LISTING</button>
+      </section>
+    </nav>
+
+    <header class="header-container">
+      <section class="header-container__section">
+        <div class="header-container__text-div">
+          <h1 class="header-container__h1-div">Let Us Guide You Home</h1>
+          <p class="header-container__p-div">Find the house of your dreams</p>
+        </div>
+        <div class="header-container__div-inputs">
+          <div class="header-container__div-inputs-select">
+            <label class="header-container__labels">Type</label>
+            <select class="header-container__selection" id="selectType">
+                <option value=""><strong>Select Type</strong></option>
+                <option value="1">Commercial</option>
+                <option value="2">House</option>
+                <option value="3">Office</option>
+                <option value="4">Residential</option>
+                <option value="5">Residential Tower</option>
+                <option value="6">Summer House</option>
+            </select>
+          </div>
+          <div class="header-container__div-inputs-select-status">
+            <label class="header-container__labels">Status</label>
+            <select class="header-container__selection" id="selectStatus">
+                <option value=""><strong>Select Status</strong></option>
+              <option value="1">For Sale</option>
+              <option value="2">For Rent</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            placeholder="Search for properties, suburbs or keywords… "
+            class="header-container__div-inputs-text"
+            id="txtfindproperties"
+          />
+          <a href="#Propiedades">
+            <button class="header-container__div-inputs-button" id="btnFindhouses">
+              Find properties
+            </button>
+          </a>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-container">
+      <section class="main-container__text" id="Propiedades">
+        <p>casaroyal real estate agency</p>
+        <h2><strong>Featured</strong> Properties</h2>
+      </section>
+      <section class="cards-container">
+        
+      </section>
+          <section class="button-section">
+            <button class="button-section__btn-properties" id="btn__all">
+              <STRong>All PROPERTIES</STRong>
+            </button>
+            <!-- <a href="#Propiedades">
+              <button class="main-container__btn hidden"    id="btn__Hide">
+                Hide properties
+              </button></a
+            > -->
+          </section>  
+
+      <section class="hot-section">
+        <div class="hot-section__title-div">
+          <p>Casa royal real estate agency</p>
+          <h2><strong>Hot</strong> Deal</h2>
+        </div>
+        <article class="hot-section__banner">
+          <div class="hot-section__imgBanner">
+            <figure class="hot-section__img">
+              <img src="./img/house31.webp" alt="apto">
+            </figure>
+            <p class="radius">Photos (4)</p>
+          </div>
+          <div class="hot-section__info-banner">
+            <p>Residential Tower For Rent</p>
+            <h2>15 Apartaments of Type B</h2>
+            <p>Los Angeles, CA</p>
+            <button class="hot-section__btn">From <span>$1,700</span> Per Month</button>
+            <img src="./img/play-video-1.png" alt="" />
+            <div class="hot-section__info-icons">
+              <img src="./img/area-icon-banner.webp" alt="" loading="lazy" /><p><strong>1600</strong><br>Sq Ft</p>
+              <img src="./img/bedroom-icon-banner.webp" alt="" loading="lazy" /><p><strong>2</strong><br>Beed</p>
+              <img src="./img/bathroom-icon-banner.webp" alt="" loading="lazy" /><p><strong>1</strong><br>Bath</p>
+              <img src="./img/garage-icon-banner.webp" alt="" loading="lazy" /><p><strong>1</strong><br>Garage</p>
+            </div>
+          </div>
+        </article>
+      </section>
+      
+      <section class="properties-Area">
+        <div class="properties-Area__title-div">
+          <p>Casa royal real estate agency</p>
+          <h2><strong>Properties</strong> by Area</h2>
+        </div>
+        <div class="properties-Area__areas">
+          <div class="properties-Area__img-city-1">
+            <figure></figure>
+            <div>
+              <h3>Bogota</h3>
+              <p>14 Properties</p>
+            </div>
+          </div>
+          <div class="properties-Area__img-city-2">
+            <figure></figure>
+            <div>
+              <h3>Ibague</h3>
+              <p>5 Properties</p>
+            </div>
+          </div>
+          <div class="properties-Area__img-city-3">
+            <figure></figure>
+            <div>
+              <h3>Manizales</h3>
+              <p>8 Properties</p>
+            </div>
+            
+          </div>
+          <div class="properties-Area__img-city-4">
+            <figure></figure>
+            <div>
+              <h3>Calarca</h3>
+              <p>1 Property</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="agents-section">
+        <div class="agents-section__title-div">
+          <p>MEET OUR TEAM</p>
+          <h2><strong>Our</strong> Agents</h2>
+        </div>
+        <article class="agents-section__cards-article" id="agentsSection">
+          <div class="agents-section__card-div">
+            <figure class="agents-section__agent-img"></figure>
+           <div class="agents-section__card-div-2" >
+             <h4>Selling Agent</h4>
+            <h2>JOHN DOE</h2>
+            <p>3134569859</p>
+            <p>John.doe@gmail.com</p>
+           </div>
+            <div class="agents-section__icons-div">
+              <figure class="agents-section__icon-f"></figure>
+              <figure class="agents-section__icon-t"></figure>
+            </div>
+          </div>
+          <div class="agents-section__card-div">
+            <figure class="agents-section__agent-img"></figure>
+           <div class="agents-section__card-div-2" >
+             <h4>Selling Agent</h4>
+            <h2>JOHN DOE</h2>
+            <p>3134569859</p>
+            <p>John.doe@gmail.com</p>
+           </div>
+            <div class="agents-section__icons-div">
+              <figure class="agents-section__icon-f"></figure>
+              <figure class="agents-section__icon-t"></figure>
+            </div>
+          </div>
+          <div class="agents-section__card-div">
+            <figure class="agents-section__agent-img"></figure>
+           <div class="agents-section__card-div-2" >
+             <h4>Selling Agent</h4>
+            <h2>JOHN DOE</h2>
+            <p>3134569859</p>
+            <p>John.doe@gmail.com</p>
+           </div>
+            <div class="agents-section__icons-div">
+              <figure class="agents-section__icon-f"></figure>
+              <figure class="agents-section__icon-t"></figure>
+            </div>
+          </div>
+          <!-- Aqui van las tarjetas de los agentes renderizadas desde main.js  -->
+
+        </article>
+        <div class="agents-section__radio-button" id="SecRadioButtons">
+          <label class="radio-buttons">
+            <input type="radio" name="agent" id="radio1" checked />
+            <span class="checkmark"></span>
+          </label>
+          <label class="radio-buttons">
+            <input type="radio" name="agent" id="radio2" />
+            <span class="checkmark"></span>
+          </label>
+          <label class="radio-buttons">
+            <input type="radio" name="agent" id="radio3" />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </section>
+      
+      <section class="sell-baner">
+        <div class="sell-baner__div">
+          <h2>
+            want to sell <br />
+            property?
+          </h2>
+          <p>
+            Let us create a tailored strategic marketing plan and<br /> keep track of the selling process.
+          </p>
+          <button class="sell-baner__btn">more details</button>
+        </div>
+      </section>
+   
+      <section class="main-container__agencies-section">
+        <div class="div-container__title">
+          <p>MEET OUR TEAM</p>
+          <h2 class="div-container__text">
+            <span>Real Estate</span> Agencies
+          </h2>
+        </div>
+        <article class="agencies-section__cards">
+          <figure>
+            <div class="cards__top">
+              <div>
+                <img src="./img/Verified-Icon.webp" alt="" />
+                <p>Verified</p>
+              </div>
+              <p>4.5</p>
+            </div>
+            <div class="agencies-cards__img">
+              <img src="./img/bulding.webp" alt="" />
+            </div>
+            <div class="agencies-cards__flag-img">
+              <img src="./img/flag.webp" alt="" />
+              <p>San Francisco, USA</p>
+            </div>
+            <div class="cards__bottom">
+              <h2>ProHouse</h2>
+              <div class="agencies-cards__paragrph">
+                <p>123 456 7890</p>
+                <p>agency@email.com</p>
+              </div>
+              <button class="agencies-cards__btns">3 Properties</button>
+            </div>
+          </figure>
+          <figure>
+            <div class="cards__top">
+              <div>
+                <img src="./img/Verified-Icon.webp" alt="" />
+                <p>Verified</p>
+              </div>
+              <p>4.5</p>
+            </div>
+            <div class="agencies-cards__img">
+              <img src="./img/trees.webp" alt="" />
+            </div>
+            <div class="agencies-cards__flag-img">
+              <img src="./img/flag.webp" alt="" />
+              <p>San Francisco, USA</p>
+            </div>
+            <div class="cards__bottom">
+              <h2>ProHouse</h2>
+              <div class="agencies-cards__paragrph">
+                <p>123 456 7890</p>
+                <p>agency@email.com</p>
+              </div>
+              <button class="agencies-cards__btns">3 Properties</button>
+            </div>
+          </figure>
+          <figure>
+            <div class="cards__top">
+              <div>
+                <img src="./img/Verified-Icon.webp" alt="" />
+                <p>Verified</p>
+              </div>
+              <p>4.5</p>
+            </div>
+            <div class="agencies-cards__img">
+              <img src="./img/architecture.webp" alt="" />
+            </div>
+            <div class="agencies-cards__flag-img">
+              <img src="./img/flag.webp" alt="" />
+              <p>San Francisco, USA</p>
+            </div>
+            <div class="cards__bottom">
+              <h2>ProHouse</h2>
+              <div class="agencies-cards__paragrph">
+                <p>123 456 7890</p>
+                <p>agency@email.com</p>
+              </div>
+              <button class="agencies-cards__btns">3 Properties</button>
+            </div>
+          </figure>
+        </article>
+      </section>
+      <!-- Termina seccion  real state  agencies  -->
+      <!-- Comienza seccion de articulos  -->
+      <section class="main-container__article-section">
+        <div class="div-container__title">
+          <p>CASA ROYAL NEWS</p>
+          <h2 class="div-container__text"><span>Articles</span> & Tips</h2>
+        </div>
+        <article class="articles-section__cards">
+          <figure class="radius">
+            <img src="./img/house7.webp" alt="" />
+            <figcaption>
+              <p>Category</p>
+              <h2>buying a home</h2>
+              <div>
+                <img src="./img/Time-Icon.webp" alt="" />
+                <h3>December 28, 2018</h3>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="radius">
+            <img src="./img/house8.webp" alt="" />
+            <figcaption>
+              <p>Category</p>
+              <h2>Pros and Cons on a Countryside house</h2>
+              <div>
+                <img src="./img/Time-Icon.webp" alt="" />
+                <h3>December 28, 2018</h3>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="radius">
+            <img src="./img/house9.webp" alt="" />
+            <figcaption>
+              <p>Category</p>
+              <h2>buying a home</h2>
+              <div>
+                <img src="./img/Time-Icon.webp" alt="" />
+                <h3>December 28, 2018</h3>
+              </div>
+            </figcaption>
+          </figure>
+        </article>
+        <div class="articles-section__div-btn">
+          <button class="main-container__btn">More articles & Tips</button>
+        </div>
+      </section>
+      
+      <section class="main-container__values-section">
+        <div class="div-container__title">
+          <p>CASA ROYAL ESTATE AGENCY</p>
+          <h2 class="div-container__text"><span>Our</span> Values</h2>
+        </div>
+        <article class="SecInfo">
+          <h3>ensuring clear communication</h3>
+          <p>We keep you in the loop every step of the way. you can rely on a transparent,comprehensible flow of information.</p>
+        </article>
+        <article >
+          <h3>making the most of technology</h3>
+          <p>Time is precious. We guarantee a high degree of afficiency and premium level of service by using the right tools.</p>
+        </article>
+        <article>
+          <h3>Providin exellent customer service</h3>
+          <p>We are passionate about what we do and we take pride in achieving the personalised results that you have in mind.</p>
+        </article>
+        <div>
+          <button class="main-container__btn" id="btnValues">READ MORE</button>
+        </div>
+      </section>
+      <section class="main-container__reviews-section">
+        <p>CLIENTS REVIEWS</p>
+        <H2>What Our Clients Says</H2>
+        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Aliquam eleifend nunc sem, sit amet luctus tellustempus tempor. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <article>
+          <img src="./img/User.webp" alt="">
+          <p>alan poe</p>
+          <p class="reviews-section__p">SAN FRANCISCO</p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-container__top-section">
+        <img src="./img/Logo.webp" alt="">
+        <p>casa<strong>Royal</strong></p>
+      </section>
+      <section class="footer-container__midle-section">
+        <article class="midle-section__colums">
+          <h3>INFORMATION</h3>
+          <li>Our Contacts</li>
+          <li>Privacy Policy</li>
+          <li>Terms And Conditions</li>
+          <li>FAQs</li>
+        </article>
+        <article class="midle-section__colums">
+          <h3>PROPERTIES</h3>
+          <li>Commercial</li>
+          <li>House</li>
+          <li>Office</li>
+          <li>Residential</li>
+          <li>Residential Tower</li>
+        </article>
+        <article class="midle-section__colums">
+          <h3>LOCATIONS</h3>
+          <li>Los Angeles</li>
+          <li>San Francisco</li>
+          <li>Seattle</li>
+          <li>San Diego</li>
+        </article>
+        <article class="midle-section__colums">
+          <h3>USEFULL LINKS</h3>
+          <li>Blog</li>
+          <li>Our Contacts</li>
+          <li>Submit Listing</li>
+          <li>Suport</li>
+        </article>
+        <article class="midle-section__colums">
+          <h3>ABOUT CASAROYAL</h3>
+          <li>casaRoyal - Premium Real State WordPress <br> Theme by FantasyThemes</li>
+          <li>111 Wall Stree, USA, New York <br> +1(234) 567 8900</li>
+        </article>
+      </section>
+    </footer>
+
+    <script src="./main.js" type="text/javascript"></script>
+  </body>
+</html>

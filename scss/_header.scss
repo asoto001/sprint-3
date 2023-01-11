@@ -1,0 +1,86 @@
+@use 'variables';
+@use 'mixins';
+
+.header-container{
+    @include mixins.img('./img/hero-bg-image.webp', 100%, 517px, cover);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    &__section{
+        display: flex;
+        flex-direction: column;
+    }
+    &__h1-div{
+        @include  mixins.title(variables.$white, 30px, 1px)
+    }
+    &__p-div{
+        @include  mixins.title(variables.$white, 12px, 1px)
+    }
+    &__div-inputs{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: variables.$white;
+        width: 1000px;
+        height: 85px;
+        padding: 20px;
+        @media(max-width: 930px){
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+        }
+    }
+   
+    &__div-inputs-select{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: variables.$grey2;
+        border: 1px solid black;
+        height: 40px;
+        width: 200px;
+        padding: 3px;
+        border: none;
+        border-radius: 3px;
+        font-family: variables.$font;
+    }
+    &__div-inputs-select-status{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: variables.$grey2;
+        border: 1px solid black;
+        height: 40px;
+        width: 150px;
+        padding: 3px;
+        border: none;
+        border-radius: 3px;
+        font-family: variables.$font;
+    }
+    &__labels{
+        color: variables.$grey;
+        font-size: 9px;
+        border: none;
+    }
+    &__selection{
+        border: none;
+        background-color: variables.$grey2;
+        font-weight: bold;
+        font-family: variables.$font;
+        font-size: 12px;
+        
+    }
+    &__div-inputs-text{
+        width: 325px;
+        border: none;
+        background-color: variables.$grey2;
+        border-radius: 3px;
+        padding: 20px;
+    }
+    &__div-inputs-button{
+       @include mixins.button(150px, 45px, 15px, 1px, variables.$blue, variables.$white, 3px);
+       border: none;
+       font-family: variables.$font;
+    }
+}

@@ -1,0 +1,51 @@
+@use 'variables';
+
+@mixin img($url, $width, $heigth, $background-size){
+    width: $width;
+    height: $heigth;
+    background-image:url($url);
+    background-size: $background-size;
+    background-repeat: no-repeat;
+}
+
+@mixin button($width, $heigth, $font-size, $letter-spacing, $background-color, $color, $border-radius){
+    width: $width;
+    height: $heigth;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+    background-color: $background-color;
+    color: $color;
+    border-radius: $border-radius;
+}
+
+@mixin title($color, $font-size, $letter-spacing){
+    color: $color;
+    font-size: $font-size;
+    letter-spacing: $letter-spacing;
+
+}
+
+@mixin infoBox($bacground-color, $color, $width, $height, $border-radius){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bacground-color;
+    color:  $color;
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
+
+// Miranda Smith
+//"sellerPhoto":"img/miranda.webp",
+// Jhon Doe
+//"sellerPhoto":"img/john.webp",
+// Lionel Richie,
+//"sellerPhoto":"img/lionel.webp",
+// "type":"House",
+// "status":"For Rent",
+//"status":"For Sale",
+// "place": "Cedritos, Bogota.dc",
+//"place": "Chapinero, Bogota.dc",
+// "place": "palermo, Manizales",
+// "place": "vergel, Ibague",
